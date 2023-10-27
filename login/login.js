@@ -27,4 +27,3 @@ document.querySelector('#link2').onclick = () => {
     document.querySelector('#login').style.display  = 'flex'
     document.querySelector('#nova-senha').style.display = 'none'
 }
-
