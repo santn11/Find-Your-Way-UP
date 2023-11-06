@@ -107,6 +107,7 @@ h2 {
     border: none;
     padding: 0.5rem;
     box-shadow: 0.3rem 0.3rem var(--base-color);
+    border: .2rem solid var(--base-color);
 }
 
 #btn {
@@ -139,10 +140,6 @@ h2 {
     transition: all 0.3s;
     color: var(--color2);
     font-weight: 600;
-}
-
-input:focus {
-    border: .2rem solid var(--base-color);
 }
 
 @media screen and (min-width: 751px) and (max-width: 991px) {
