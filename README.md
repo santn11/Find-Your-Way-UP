@@ -57,7 +57,7 @@
 <br>
 ![Fernando Nogueira Santos](https://github.com/santn11)
 <br>
-![Gabriel Massayuki Otaki de Lara](https://github.com/Massa._yuki)
+![Gabriel Massayuki Otaki de Lara](https://github.com/massayukiotaki)
 <br>
 ![Gabriel Mendes da Silva](https://github.com/devgabrielmendes)
 <br>
