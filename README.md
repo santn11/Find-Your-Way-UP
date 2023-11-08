@@ -1,5 +1,5 @@
 <h1>Find Your Way UP - Fabrica IV</h1>
-<h2>Versão: 2.0</h2>
+<h2>Versão: 1.7</h2>
 <h2>Status do projeto: Em andamento ▶️</h2>
 
 <h2>Tópicos :memo:</h2>
