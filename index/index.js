@@ -7,3 +7,7 @@ document.querySelector('#btn-config').onclick = () => {
 document.querySelector('#fechar-config').onclick = () => {
     document.querySelector('#config').style.display= "none"
 }
+
+document.querySelector('#teste').onclick = () => {
+    document.querySelector('.teste-vocacional').style.display= "block"
+}
