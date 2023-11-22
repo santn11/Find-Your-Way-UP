@@ -1,0 +1,6 @@
+Erros Tela de Login e Cadastro:
+
+1. Email e/ou senha inválidos (Login)
+2. Senhas diferentes (Cadastro)
+3. Email inexistente (Login e Nova senha)
+4. Email já cadastrado (Cadastro)
