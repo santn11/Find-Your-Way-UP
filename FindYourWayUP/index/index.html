@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>FindYourWayUP</title>
+</head>
+<body>
+    <!-- Cabeçalho da página principal -->
+    <header class=" justify-content-between align-items-center w-100">
+        <h2>FindYourWay<span>UP</span></h2>
+        <div>
+            <!-- Nome do usuário -->
+            <label>NOGUEIRA</label>
+            <!-- Configurações do site -->
+            <i class="bi bi-gear-fill" id="btn-config"></i>
+            
+        </div>
+    </header>
+
+    <!-- Popup de configuração -->
+    <div class="block" id="config">
+        <label>NOGUEIRA</label>
+        <a href="../login/login.html" class="link-danger link-offset-2 link-underline link-underline-opacity-0">SAIR</a>
+        <i class="bi bi-x" id="fechar-config"></i>
+    </div>
+
+    <!-- Blocos de funções do site -->
+    <main>
+        <!-- Bloco 1 = Histórico -->
+        <div class="block" id="historico">
+            <label class="block">HISTÓRICO DE RESULTADOS</label>
+            <ul>
+                <li>Área1<br>%</li>
+                <li>Área1<br>%</li>
+                <li>Área1<br>%</li>
+            </ul>
+        </div> 
+        
+        <hr>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <i class="bi bi-x" id="fechar-teste" style="float: right; position: fixed;"></i>
+
+                <div class="carousel-item active" id="quiz">
+                <p>
+                    Em relação a sua personalidade, você:
+                </p>
+                <div class="container">
+                    <div class="custom-radio">
+                      <input type="radio" id="radio-1" name="tabs" data-area="exatas">
+                      <label class="radio-label" for="radio-1">
+                          tem bom raciocínio lógico e facilidade de solucionar problemas
+                      </label>
+                      <input type="radio" id="radio-2" name="tabs" data-area="humanas">
+                      <label class="radio-label" for="radio-2">
+                        <span class="radio-text">
+                          se considera uma pessoa reflexiva
+                        </span>
+                      </label>
+                      <input type="radio" id="radio-3" name="tabs" data-area="tecnologia">
+                      <label class="radio-label" for="radio-3">
+                        <span class="radio-text"> 
+                          é um bom comunicador, sabe trabalhar em equipe, personalidade aventureira e criativa
+                        </span>
+                      </label>
+                      <input type="radio" id="radio-4" name="tabs" data-area="saude">
+                      <label class="radio-label" for="radio-4">
+                        <span class="radio-text">
+                          é uma pessoa paciente, empática e com boa comunicação
+                        </span>
+                      </label>
+                    </div>
+                </div>                
+                </div>
+                <div class="carousel-item " id="quiz">
+                
+                    <p>
+                        Em relação aos seus interesses, você: 
+                    </p>
+                    <div class="container">
+                        <div class="custom-radio">
+                          <input type="radio" id="radio-1" name="tabs" data-area="exatas">
+                          <label class="radio-label" for="radio-1">
+                            gosta de resolver problemas práticos
+                          </label>
+                          <input type="radio" id="radio-2" name="tabs" data-area="humanas">
+                          <label class="radio-label" for="radio-2">
+                            <span class="radio-text">
+                              gosta de ler e está ligado nois últimos acontecimentos políticos, sociais e econômicos
+                            </span>
+                          </label>
+                          <input type="radio" id="radio-3" name="tabs" data-area="tecnologia">
+                          <label class="radio-label" for="radio-3">
+                            <span class="radio-text">
+                              se interessa por inovações tecnológicas
+                            </span>
+                          </label>
+                          <input type="radio" id="radio-4" name="tabs" data-area="saude">
+                          <label class="radio-label" for="radio-4">
+                            <span class="radio-text">
+                              tem a capacidade de se colocar no lugar das outras pessoas
+                            </span>
+                          </label>
+                        </div>
+                    </div>                
+                </div>
+                <div class="carousel-item" id="quiz">
+                
+                    <p>
+                      De 1 - 4 quanto vc se considera uma pessoa lógica e organizada?   
+                    </p>
+                    <div class="container">
+                        <div class="custom-radio">
+                          <input type="radio" id="radio-1" name="tabs" data-area="humanas">
+                          <label class="radio-label" for="radio-1">
+                            1
+                          </label>
+                          <input type="radio" id="radio-2" name="tabs" data-area="saude">
+                          <label class="radio-label" for="radio-2">
+                            <span class="radio-text">
+                              2
+                            </span>
+                          </label>
+                          <input type="radio" id="radio-3" name="tabs" data-area="tecnologia">
+                          <label class="radio-label" for="radio-3">
+                            <span class="radio-text">
+                              3
+                            </span>
+                          </label>
+                          <input type="radio" id="radio-4" name="tabs" data-area="exatas">
+                          <label class="radio-label" for="radio-4">
+                            <span class="radio-text">
+                              4
+                            </span>
+                          </label>
+                        </div>
+                    </div>                
+                </div>
+
+                <div class="carousel-item" id="quiz">
+                
+                  <p>
+                    De 1 a 4, tenho facilidade em utilizar números, símbolos e algarismos.
+                  </p>
+                  <div class="container">
+                      <div class="custom-radio">
+                        <input type="radio" id="radio-1" name="tabs" data-area="humanas">
+                        <label class="radio-label" for="radio-1">
+                          1
+                        </label>
+                        <input type="radio" id="radio-2" name="tabs" data-area="saude">
+                        <label class="radio-label" for="radio-2">
+                          <span class="radio-text">
+                            2
+                          </span>
+                        </label>
+                        <input type="radio" id="radio-3" name="tabs" data-area="tecnologia">
+                        <label class="radio-label" for="radio-3">
+                          <span class="radio-text">
+                            3
+                          </span>
+                        </label>
+                        <input type="radio" id="radio-4" name="tabs" data-area="exatas">
+                        <label class="radio-label" for="radio-4">
+                          <span class="radio-text">
+                            4
+                          </span>
+                        </label>
+                      </div>
+                  </div>                
+                </div>
+
+                <div class="carousel-item" id="quiz">
+                
+                  <p>
+                    De 1 - 4, uso o meu corpo para expressar emoções
+                  </p>
+                  <div class="container">
+                      <div class="custom-radio">
+                        <input type="radio" id="radio-1" name="tabs" data-area="humanas">
+                        <label class="radio-label" for="radio-1">
+                          1
+                        </label>
+                        <input type="radio" id="radio-2" name="tabs" data-area="saude">
+                        <label class="radio-label" for="radio-2">
+                          <span class="radio-text">
+                            2
+                          </span>
+                        </label>
+                        <input type="radio" id="radio-3" name="tabs" data-area="exatas">
+                        <label class="radio-label" for="radio-3">
+                          <span class="radio-text">
+                            3
+                          </span>
+                        </label>
+                        <input type="radio" id="radio-4" name="tabs" data-area="tecnologia">
+                        <label class="radio-label" for="radio-4">
+                          <span class="radio-text">
+                            4
+                          </span>
+                        </label>
+                    </div>
+                  </div>                
+                </div>
+
+                <div class="carousel-item" id="quiz">
+                
+                 <p>
+                   De 1 - 4 quanto vc Utiliza planilhas e gráficos e gosto de explicar aos outros 
+                  </p>
+                  <div class="container">
+                      <div class="custom-radio">
+                        <input type="radio" id="radio-1" name="tabs" data-area="humanas">
+                        <label class="radio-label" for="radio-1">
+                          1
+                       </label>
+                        <input type="radio" id="radio-2" name="tabs" data-area="saude">
+                        <label class="radio-label" for="radio-2">
+                         <span class="radio-text">
+                            2
+                         </span>
+                        </label>
+                       <input type="radio" id="radio-3" name="tabs" data-area="tecnologia">
+                       <label class="radio-label" for="radio-3">
+                         <span class="radio-text">
+                            3
+                          </span>
+                       </label>
+                       <input type="radio" id="radio-4" name="tabs" data-area="exatas">
+                       <label class="radio-label" for="radio-4">
+                          <span class="radio-text">
+                            4
+                          </span>
+                       </label>
+                      </div>
+                  </div> 
+                </div>                 
+          
+
+                <div class="carousel-item" id="quiz">
+                
+                  <p>
+                   Os profissionais que mais admiro são aqueles que:   
+                  </p>
+                  <div class="container">
+                     <div class="custom-radio">
+                       <input type="radio" id="radio-1" name="tabs" data-area="tecnologia">
+                        <label class="radio-label" for="radio-1">
+                         Utilizam se de inovações e sempre estão atrás de novas tecnologias.
+                       </label>
+                        <input type="radio" id="radio-2" name="tabs" data-area="saúde">
+                        <label class="radio-label" for="radio-2">
+                          <span class="radio-text">
+                            São considerados essenciais no que fazem e tem grande responsabilidade sobre outros.
+                          </span>
+                        </label>
+                        <input type="radio" id="radio-3" name="tabs" data-area="humanas">
+                        <label class="radio-label" for="radio-3">
+                          <span class="radio-text">
+                            São excelentes e sempre desenvolvem trabalhos voluntários.
+                          </span>
+                        </label>
+                        <input type="radio" id="radio-4" name="tabs" data-area="exatas">
+                        <label class="radio-label" for="radio-4">
+                          <span class="radio-text">
+                            São estudiosos e vêem o mundo através de números e padrões.
+                         </span>
+                       </label>
+                      </div>
+                  </div>                
+                </div>
+
+               <div class="carousel-item" id="quiz">
+
+                 <p>
+                   De 1 a 4, o quanto você é prático e rápido nas tomadas de decisões  
+                 </p>
+                 <div class="container">
+                     <div class="custom-radio">
+                       <input type="radio" id="radio-1" name="tabs" data-area="humanas">
+                       <label class="radio-label" for="radio-1">
+                         1
+                       </label>
+                       <input type="radio" id="radio-2" name="tabs" data-area="saude">
+                       <label class="radio-label" for="radio-2">
+                         <span class="radio-text">
+                           2
+                          </span>
+                       </label>
+                       <input type="radio" id="radio-3" name="tabs" data-area="tecnologia">
+                       <label class="radio-label" for="radio-3">
+                         <span class="radio-text">
+                           3
+                         </span>
+                       </label>
+                       <input type="radio" id="radio-4" name="tabs" data-area="exatas">
+                       <label class="radio-label" for="radio-4">
+                          <span class="radio-text">
+                            4
+                          </span>
+                        </label>
+                      </div>
+                  </div>                
+              </div>
+
+             <div class="carousel-item" id="quiz">
+                       
+               <p>
+                 De 1 - 4 quanto as pessoas te acham um bom ouvinte    
+               </p>
+               <div class="container">
+                   <div class="custom-radio">
+                      <input type="radio" id="radio-1" name="tabs" data-area="tecnologia">
+                     <label class="radio-label" for="radio-1">
+                       1
+                     </label>
+                     <input type="radio" id="radio-2" name="tabs" data-area="exatas">
+                     <label class="radio-label" for="radio-2">
+                       <span class="radio-text">
+                         2
+                       </span>
+                     </label>
+                     <input type="radio" id="radio-3" name="tabs" data-area="saude">
+                     <label class="radio-label" for="radio-3">
+                       <span class="radio-text">
+                         3
+                       </span>
+                     </label>
+                     <input type="radio" id="radio-4" name="tabs" data-area="humanas">
+                     <label class="radio-label" for="radio-4">
+                        <span class="radio-text">
+                          4
+                        </span>
+                      </label>
+                    </div>
+                </div>                
+            </div>
+
+            <div class="carousel-item" id="quiz">
+          
+            <p>
+              As minhas férias ideais são:
+            </p>
+            <div class="container">
+                <div class="custom-radio">
+                  <input type="radio" id="radio-1" name="tabs" data-area="tecnologia">
+                  <label class="radio-label" for="radio-1">
+                    Jogar, assistir séries de ficção científica e obter mais conhecimento, enquanto descanso em casa.
+                  </label>
+                 <input type="radio" id="radio-2" name="tabs" data-area="saude">
+                 <label class="radio-label" for="radio-2">
+                   <span class="radio-text">
+                     Fazendo tudo que gosto, aproveitando a natureza, a praia, coisas que nunca tenho tempo para curtir.
+                   </span>
+                 </label>
+                 <input type="radio" id="radio-3" name="tabs" data-area="humanas">
+                 <label class="radio-label" for="radio-3">
+                   <span class="radio-text">
+                     Viajar, conhecendo museus, exposições de arte, mais culturas, etc.
+                   </span>
+                 </label>
+                 <input type="radio" id="radio-4" name="tabs" data-area="exatas">
+                 <label class="radio-label" for="radio-4">
+                   <span class="radio-text">
+                     Estudar atrás de mais conhecimento e ler livros de grande gênios.
+                    </span>
+                  </label>
+                </div>
+            </div>   
+          </div> 
+  
+              </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="buttons">
+            <!-- Bloco 2 = Logo do site -->
+            <div class="block" id="logo">
+              <h2>FindYourWay<span>UP</span><i class="bi bi-capslock-fill"></i></h2>
+            </div>
+            <!-- Bloco 3 = Teste vocacional -->
+            <div class="block" id="teste">
+                <i class="bi bi-pencil-fill"></i>
+                FAZER TESTE VOCACIONAL
+            </div>
+            <!-- Bloco 4 = Noticias das áreas -->
+            <a href="../nav/nav.html" class="block" id="news">
+                <i class="bi bi-newspaper"></i>
+                NOTICIAS SOBRE AS ÁREAS
+            </a>
+            <!-- Bloco 5 = Informações das áreas -->
+            <a href="../nav/nav.html" class="block" id="info">
+                <i class="bi bi-info-circle"></i>
+                INFORMAÇÕES SOBRE AS ÁREAS
+            </a>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
